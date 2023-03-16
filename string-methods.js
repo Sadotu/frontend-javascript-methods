@@ -12,6 +12,7 @@ console.log(word.length);
 
 const fruit = "Banaan";
 const vegetable = "Aardappel";
+console.log(fruit.length > vegetable.length)
 
 
 
@@ -21,14 +22,15 @@ const vegetable = "Aardappel";
 // ---- Verwachte uitkomst voor fruit: "n"
 // ---- Verwachte uitkomst voor vegetable: "l"
 
-
+console.log(fruit.slice(-1));
+console.log(vegetable.slice(-1));
 
 /* Opdracht 3 */
 //  Haal de spaties aan het begin en eind van onderstaande zin weg en log dit in de terminal
 // ---- Verwachte uitkomst: "De kat krabt de krullen van de trap"
 
 const userInput = "  De kat krabt de krullen van de trap ";
-
+console.log(userInput.trim())
 
 
 /* Opdracht 4 */
@@ -36,13 +38,16 @@ const userInput = "  De kat krabt de krullen van de trap ";
 // ---- Verwachte uitkomst: true
 
 const story = "We vinden de behaalde resultaten werkelijk prachtig. Fantastisch, nietwaar?"
-
+console.log(story.includes("Fantastisch"))
 
 
 /* Opdracht 5 */
 // Knip de vraag van bovenstaande tekst (story) af, zodat alleen het eerste gedeelte overblijft en log dit in de terminal.
 // ---- Verwachte uitkomst: "We vinden de behaalde resultaten werkelijk prachtig."
 
+const index = story.indexOf(".")
+
+console.log(story.substring(0, index + 1))
 
 
 /* Opdracht 6 */
@@ -53,6 +58,7 @@ const story = "We vinden de behaalde resultaten werkelijk prachtig. Fantastisch,
 // ---- Verwachte uitkomst: "€35,59"
 
 const price = "$35.59";
+console.log(price.replaceAll("$", "€").replaceAll(".", ","))
 
 
 
